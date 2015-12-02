@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 '''
-list all (specific)files in the current directory and subdirectory, with recursion
+list all (specific)files in the current directory and subdirectories, with recursion
 '''
 
 import os
@@ -26,7 +26,7 @@ def lsTarget(dirName, filetypeStr):
         else:
             prefile, ext = os.path.splitext(item)
             ext = ext.lower()
-            if ext == filetypeStr:
+            if ext == filetypeStr.lower():
                 print(subname)
 
 if  __name__ == '__main__':
